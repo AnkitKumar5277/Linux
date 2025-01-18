@@ -1,0 +1,218 @@
+Introduction :
+25 August 1991 - Birthdate of Linux 
+Linus torvalds - developed by
+Intel based PC - design by
+Kernal environment and file structure - major component 
+Purpose - for fun
+Tux penguin - Mascot for Linux
+G nome Desktop - environment
+
+Some Number of distros :
+Ubuntu, Devian, Kali Linux, Black arch, Red hat, Fedora, Linux mint, manjarono, elementary OS, zorin OS, etc
+
+Cool features of Linux :
+Multi user capacity
+multitasking
+portability
+security
+live CD USB
+gui
+application support
+file system
+open source
+
+Information :
+Open source
+free to use
+core 2 to modify
+Kernal
+community
+
+Installation :
+Virtual Machine like virtual box, VMware
+Windows subsystem for Linux WSL
+Complete install using pen drive / ISO
+
+Linux file system : 
+Directory = folder
+/bin - basic programs, ls cd mv etc
+/sbin - system programs, fdisk, sysctl, etc
+/etc - configuration files
+/temp - temporary files
+/user/bin - applications apt, Nmap, etc
+/user/share - application support and data files
+/home - home directory of super user (admin)
+
+popular commands :
+help - show commands and there use
+man - command ya program ka complete manual batata h
+ls - directory k saare files aur folders dikhata h
+cd - change directory ( ek folder se dusre folder me change )
+pwd - path working directory
+dir - sama as ls
+mkdir - create new directory
+cp - copy a file or folder
+mv - move file or folder
+rm - remove or delete file or folder
+sudo su - grant permission priviliges
+cat - file k content dikhata h
+nano - linux file editor
+gedit - file editor software
+chmod - change directory permission
+./, bash - execute shell file
+apt-get update - update package list (URL's), self update like playstore
+
+apt-get upgrade - update all installled softwares
+apt-get install git - install a particular software
+top - showing linux processs
+kill - terminate process manually
+w - who is logged on and what they are doing, login logs
+whoami - display usename of current user
+touch - create empty files
+
+PID - process id
+USER - running application
+PR - priority
+NI - if: - -> low priority
+     - else: + -> high priority
+VIRT - virtual memory
+RES - non swap memory who's system is taking
+SHR - shared memory
+S - if: s -> sleep mode
+      else: i -> inactive
+%cpu - processing
+%mem - memory utilising
+TIME - how long time does it take
+COMMAND - softwares command's
+close commond - / kill process id
+kill process_id, ex: $kill 22540
+
+Host Name and Host file configuration :
+Linux@Ankit
+Linux -> domain host
+Ankit -> Host name
+
+Change Host name : 
+sudo su
+cd /etc
+find host and host name
+hostname
+gedit hostname
+
+Domain Name change :
+sudo su
+cd /etc
+find hosts
+gedit hosts
+  -> there are two domain hosts
+  1. local hosts -> system
+  2. domain hosts
+
+microsoft server name is iis but
+linux server name is apache2 (open source)
+its default port - 80
+ex: $service apache2 start
+
+; -> if first command failed but second command is executed
+ex: $cd;ls
+
+&& -> both command run first left and then right
+ex: $ls&&ls
+
+|| -> or command work only one command 
+ex: $cd||ls
+
+Top teminal shortcuts :
+Tab - auto completes names
+ctrl+c abort process manually
+ctrl+l same as clear command
+ctrl+d same as exit command
+ctrl+alt+d minimise all terminal / windows, and again return
+ctrl+u - clear line
+ctrl+z - suspend for background (fg for revert)
+ctrl+a - positon start point 
+ctrl+e - position end point 
+ctrl+shift+c - copy
+ctrl+shift+v - paste
+
+Basic commands :
+echo - output ko string me pass karta h
+
+
+relative path - /home/ankit/folder , start form current working directory
+
+absolute path - cd /home/ankit/folder/ ,full path to directory
+
+touch, vi, vim, nano - create file in linux
+
+vi, vim, nano - touch newfile -> ls - vi newfile -> edit newfile -> cat myfile, create existing file
+
+mv oldname newname - rename
+
+cat csvl - show file content
+less csvl - show file content 
+
+grep ankit - search string in file
+or /ankit
+
+egrep "string1|string2|string3" search multiple word
+
+cat command alternatives - less,  more, vi
+
+adv of (less) - badi files ko read karna asan h, forware aur backword search asan h, top se bottom navigaton asan h
+
+ls -l - check fle permission
+ll - check fle permission
+getfacl file_name - check file permission
+
+ifconfig - check ip
+is addr - check ip
+
+head -5 file_name - read top 5 lines in flle
+tail -5 file_name - read last 5 lines in file
+ls -a - show all hidden fles
+history - show recent commands
+root - super user, root ka home directory, root directory
+
+ls -li - inode, index node hota h jo filesystem k metadata k piece ka specific uniquie idenifier number deta h 
+
+find folder/ - name csvl -> folder/innerfolder/csvl, find files on linux server
+
+locate csvl - > /home/ankit/folder/innerfolder/ -name csvl, find files on linux server
+
+wc - counting words and line
+
+wc -l - counting words and line
+
+combine two commands or what is pipe use - command1 | command2
+
+diff file1 file2 - view difference between two files
+
+shred -u file_name -> permanently delete a file, unable to recover
+
+shred --remove file_name
+
+dmidecode,  lscpu - architechture info
+
+combine two files - cat file1 file2
+cat file1 file2 > file3
+
+find filetype - file file_name
+
+sort content of file - sort file_name
+
+sort content of file - cat file_name | sort
+
+access linux remotely from windows
+use tools and terminal like:
+putty
+git bash
+cmd
+
+
+
+
+
+
+
+
